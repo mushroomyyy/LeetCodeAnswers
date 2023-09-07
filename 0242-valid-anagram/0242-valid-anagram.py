@@ -8,6 +8,7 @@ class Solution(object):
         s_dict = {}
         t_dict = {}
 
+
         for char in s:
             if char in s_dict:
                 s_dict[char] += 1
@@ -20,10 +21,6 @@ class Solution(object):
             else:
                 t_dict[char] = 1
         
-        if s_dict == t_dict:
-            return True
-        else:
-            return False
-
+        return s_dict == t_dict
 
         
